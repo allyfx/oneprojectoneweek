@@ -1,4 +1,5 @@
-<h2 align="center">Bin2Dec</h2>
+<h2 align="center">👩‍💻 Bin2Dec</h2>
+<blockquote align="center">Binary to decimal converter.</blockquote>
 
 ## 💡What is it?
 Bin2Dec is OneProjectOneWeek's first challenge. It allows you to convert a binary number to a decimal number.
