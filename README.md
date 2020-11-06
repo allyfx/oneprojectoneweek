@@ -6,3 +6,4 @@ OneProjectOneWeek is a weekly challenge event made with other developers to stud
 
 ## 📂Challenges
 - #1 | [Bin2Dec](https://github.com/allyfx/oneprojectoneweek/tree/master/Bin2Dec) - binary to decimal converter.
+- #2 | [Border-radius Previewer](https://github.com/allyfx/oneprojectoneweek/tree/master/BorderRadiusPreviewer) - preview how CSS3 border-radius values affect an element.
