@@ -1,5 +1,6 @@
 <h2 align="center">👩‍💻 Bin2Dec</h2>
-<blockquote align="center">Binary to decimal converter.</blockquote>
+<p align="center">Binary to decimal converter.</p>
+<h4 align="center">Deploy -> https://challenge1-bin2dec.netlify.app/</h4>
 
 <img src="./.github/bin2dec.gif" />
 
