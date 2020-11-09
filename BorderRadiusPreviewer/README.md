@@ -1,5 +1,6 @@
 <h2 align="center">🎨 Border-radius Previewer</h2>
 <p align="center">Preview how CSS3 border-radius values affect an element.</p>
+<h4 align="center">Deploy -> https://challenge2-borderradiuspreviewer.netlify.app/</h4>
 
 <img src="./.github/border-radius-previewer-git.gif" />
 
