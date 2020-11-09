@@ -32,8 +32,8 @@ borderSides.addEventListener('change', (event) => {
     texts.forEach(text => {
         sidesContainer.innerHTML += `
             <div class="value-input-container">
-                <label for=`value-${text}`>${text}</label>
-                <input oninput="displayPreview(event)" id=`value-${text}` type="number" class="value-input">
+                <label for=value-${text}>${text}</label>
+                <input oninput="displayPreview(event)" id=value-${text} type="number" class="value-input">
             </div>
         `;
     });
