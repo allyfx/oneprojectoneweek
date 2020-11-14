@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: Roboto, sans-serif;
+}
+
+.centered-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 670px;
+    height: 770px;
+    background-color: #355C7D;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2 {
+    font-weight: bold;
+    font-size: 28px;
+    color: #F9F7F7;
+}
+
+.container .calculator {
+    width: 576px;
+    height: 640px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator .display-container {
+    width: 365px;
+    height: 80px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #2B2E4A;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator .display {
+    width: 96%;
+    height: 84%;
+
+    background-color: #384259;
+    border-radius: 8px;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.calculator .display-container .previous-account {
+    font-size: 16px;
+    font-weight: bold;
+    color: #DBE2EF;
+    opacity: 50%;
+}
+
+.calculator .display-container .current-account {
+    font-size: 36px;
+    font-weight: bold;
+    color: #F9F7F7;
+}
+
+.calculator .keyboard {
+    flex: 1;
+    border-radius: 8px;
+    background-color: #2B2E4A;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator .keyboard .keyboard-grid {
+    padding: 26px;
+    row-gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.calculator .keyboard .keyboard-grid button {
+    border: none;
+    outline: none;
+
+    font-size: 30px;
+    width: 119px;
+    height: 101px;
+    transition: background-color 0.2s;
+}
+
+.calculator .keyboard .keyboard-grid button:hover {
+    background-color: #C1C5CD;
+}
+
+.calculator .keyboard #clear-entry-button,
+.calculator .keyboard #number-seven,
+.calculator .keyboard #number-four,
+.calculator .keyboard #number-three,
+.calculator .keyboard #number-zero {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.calculator .keyboard #subtraction,
+.calculator .keyboard #multiplication-button,
+.calculator .keyboard #division-button,
+.calculator .keyboard #calculate,
+.calculator .keyboard #plus-button {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.calculator .keyboard #number-zero {
+    width: 242px;
+}
+
+small {
+    color: #355C7D;
+}
+
+a {
+    color: #355C7D;
+}
