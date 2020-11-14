@@ -7,3 +7,4 @@ OneProjectOneWeek is a weekly challenge event made with other developers to stud
 ## 📂Challenges
 - #1 | [Bin2Dec](https://challenge1-bin2dec.netlify.app/) - binary to decimal converter.
 - #2 | [Border-radius Previewer](https://challenge2-borderradiuspreviewer.netlify.app/) - preview how CSS3 border-radius values affect an element.
+- #3 | [Calculator]() - a simple calculator.
