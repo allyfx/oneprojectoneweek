@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bin2Dec - Binary converter</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+                font-family: Roboto, sans-serif;
+            }
+
+            div.content {
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            main {
+                width: 600px;
+                height: 500px;
+
+                background-color: #cbf1f5;
+                border-radius: 20px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            main h2 {
+                margin-bottom: 90px;
+                color: #364f6b;
+            }
+
+            button.submit-binary {
+                margin: 30px 0;
+                width: 300px;
+                height: 50px;
+
+                color:#364f6b;
+                font-size: 20px;
+                background: #a6e3e9;
+
+                outline: none;
+                border: none;
+                border-radius: 8px;
+
+                transition: background-color 0.2s, color 0.2s;
+            }
+
+            button.submit-binary:hover {
+                cursor: pointer;
+                color: #FFF;
+                background: #71c9ce;
+            }
+
+            input {
+                width: 300px;
+                height: 40px;
+
+                font-size: 20px;
+                outline-color: #71c9ce;
+                border: none;
+                border-radius: 8px;
+            }
+
+            small {
+                color: #364f6b;
+            }
+        </style>
+
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <main>
+                <h2>Bin2Dec - Binary converter</h2>
+    
+                <input placeholder="Ex.: 010010" oninput="checkInputValues(event)" type="text" class="input-field">
+    
+                <button onclick="convertBinaryToDecimal()" class="submit-binary" type="button">Convert</button>
+    
+                <input type="text" class="converted-binary-display">
+            </main>
+
+            <small>Made by Alícia Foureaux.</small>
+        </div>
+    </body>
+</html>
