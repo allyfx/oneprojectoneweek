@@ -1,6 +1,6 @@
 <h2 align="center">🖩 Calculator</h2>
 <p align="center">A simple calculator.</p>
-<h4 align="center">Deploy -> </h4>
+<h4 align="center">Deploy -> https://challenge3-calculator.netlify.app/</h4>
 
 <h1 align="center">
     <img src="./.github/calculator.gif" />
