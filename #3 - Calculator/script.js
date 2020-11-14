@@ -13,9 +13,9 @@ let operatorsButtons = document.querySelectorAll('button.operator');
 numButtons.forEach(btn => {
     btn.addEventListener('click', (event) => {
         if (currentNumber.innerText === '0') {
-            currentNumber.innerText = event.path[0].innerText;
+            currentNumber.innerText = btn.innerText;
         } else if(currentNumber.innerText.length < 10) {
-            currentNumber.innerText += event.path[0].innerText;
+            currentNumber.innerText += btn.innerText;
         }
     });
 });
@@ -25,29 +25,29 @@ numButtons.forEach(btn => {
  */
 operatorsButtons.forEach(btn => {
     btn.addEventListener('click', (event) => {
-        if (event.path[0].innerText === ',') {
+        if (btn.innerText === ',') {
             currentNumber.innerText += '.';
             return;
         }
 
-        if (event.path[0].innerText === '%') {
+        if (btn.innerText === '%') {
             currentNumber.innerText = Number(currentNumber.innerText) / 100;
             return;
         }
 
-        if (event.path[0].innerText === 'CE') {
+        if (btn.innerText === 'CE') {
             currentNumber.innerText = '0';
             return;
         }
 
-        if (event.path[0].innerText === 'C') {
+        if (btn.innerText === 'C') {
             currentNumber.innerText = '0';
             previousNumber.innerText = '';
             calc = [];
             return;
         }
 
-        addOperator(event.path[0].innerText);
+        addOperator(btn.innerText);
     });
 });
 
