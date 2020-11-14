@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Border-radius Previewer</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+
+                font-family: Roboto, sans-serif;
+            }
+
+            .container {
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container .content {
+                background: #71c9ce;
+                padding: 70px;
+                border-radius: 10px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container .content h2 {
+                margin-bottom: 60px;
+                color: #364f6b;
+            }
+
+            .content .result-container {
+                margin-bottom: 40px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .content .result-container .preview {
+                margin-bottom: 12px;
+
+                background: #00adb5;
+                padding: 20px; 
+                width: 400px;
+                height: 250px;
+
+                color: #f5f5f5;
+                font-size: 20px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .content .result-container .css-preview {
+                width: 171px;
+                height: 50px;
+                padding: 2px;
+                border: 2px solid #eaeaea;
+                border-radius: 6px;
+                background: #eaeaea;
+
+                color: #364f6b;
+                font-size: 14px;
+
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #select-quantity-sides {
+                width: 200px;
+                cursor: pointer;
+                margin-bottom: 18px;
+
+                color: #364f6b;
+            }
+
+            .content .sides-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .content .sides-container .value-input-container {
+                color: #364f6b;
+                font-size: 18px;
+
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                flex-direction: column;
+            }
+
+            .content .sides-container .value-input-container + .value-input-container {
+                margin-top: 10px;
+            }
+
+            .content .sides-container .value-input {
+                margin-left: 6px;
+
+                color: #364f6b;
+            }
+
+            small {
+                color: #364f6b;
+            }
+        </style>
+
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h2>Border-radius Previewer</h2>
+
+                <div class="result-container">
+                    <div id="preview" class="preview">
+                        I'm the previewer!!
+                    </div>
+                    <div onclick="copyToClipboard()" id="css-preview" class="css-preview">Css Preview</div>
+                </div>
+
+                <select id="select-quantity-sides">
+                    <option value="1">
+                        All sides equal
+                    </option>
+
+                    <option value="2">
+                        Top left & Bottom Right, Top Right & Bottom Left
+                    </option>
+                    
+                    <option value="3">
+                        Top Left, Bottom Left & Top Right, Bottom Right
+                    </option>
+
+                    <option value="4">
+                        Specify each side
+                    </option>
+                </select>
+
+                <div class="sides-container">
+                    <div class="value-input-container">
+                        <label for="value">Value</label>
+                        <input oninput="displayPreview(event)" id="value" type="number" class="value-input">
+                    </div>
+                </div>
+            </div>
+            <small>Made by Alícia Foureaux.</small>
+        </div>
+    </body>
+</html>
